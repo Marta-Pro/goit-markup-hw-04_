@@ -136,10 +136,23 @@ body {
 /* HERO */
 
 .hero {
-  background-color: var(--dark-color);
+  /*background-color: var(--dark-color);*/
+
   padding-top: 188px;
   padding-bottom: 188px;
   text-align: center;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/people-office_.jpeg");
+max-width: 1440px;
+height: 600px;
+margin-left: auto;
+margin-right: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-title {
@@ -154,6 +167,31 @@ body {
   margin: auto;
 }
 
+.list-item::before{
+display: block;
+content: '';
+height: 120px;
+background-repeat: no-repeat;
+background-position: center;
+background-color: #F4F4FD;
+}
+.icon-antena::before{
+  background-image: url('../images/antenna.svg');
+
+}
+.icon-clock::before{
+    background-image: url('../images/clock.svg');
+    
+    
+}
+.icon-diagram::before{
+    background-image: url('../images/diagram.svg');
+  
+}
+.icon-astroaut::before{
+    background-image: url('../images/astronaut.svg');
+   
+}
 .btn {
   cursor: pointer;
   border: none;
@@ -210,6 +248,10 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
+.section-customers{
+  margin-bottom: 110px;
+  margin-top: 130px;
+}
 /* Studio / Description of studio */
 img {
   display: block;
@@ -243,6 +285,7 @@ img {
   letter-spacing: 0.02em;
   margin-bottom: 8px;
   text-align: left;
+  margin-top: 8px;
 }
 
 .desc-text,
@@ -258,6 +301,28 @@ img {
 .main-desc .list.item {
   min-width: 264px;
 }
+
+ /*----Section4- Clients---*/
+ .customer-item{
+border: 1px solid #8E8F99;
+border-radius: 4px;
+height: 88px;
+width: 168px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+cursor: pointer;
+
+ }
+.customer-list{
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+/*----Section4- Clients---*/
+
 
 /* Portfolio / Description of the works of the studio */
 
@@ -306,9 +371,45 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
+.actions{
+  display: flex;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.a-act{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  background-color: #4D5AE5;
+  border-radius: 50%;
+
+  background-position: center;
+  margin: 0 13px 32px 13px;
+}
+.a-act:hover,
+.a-act:focus{
+
+  background-color: #404BBF;
+
+}
+.a-icon{
+ 
+  width: 16px;
+  height: 16px;
+  background-position: center;
+}
+
 
 .cont-text {
-  padding: 32px 16px;
+  padding: 32px 16px 8px 16px;
 }
 
 .desc-title,
@@ -383,6 +484,11 @@ img {
   background-color: var(--primary-brand-color);
   color: var(--white-color);
   border-color: transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+   0px 2px 1px rgba(0, 0, 0, 0.08), 
+   0px 2px 2px rgba(0, 0, 0, 0.12);
+
+
 }
 
 .btn-prt {
@@ -409,7 +515,13 @@ img {
   border: 1px solid #e7e9fc;
   border-top: none;
 }
-
+.prt-block:hover{
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+   0px 1px 1px 
+   rgba(46, 47, 66, 0.16),
+    0px 2px 1px 
+    rgba(46, 47, 66, 0.08);
+}
 .prt-title {
   color: var(--dark-color);
   font-weight: 500;
@@ -441,7 +553,12 @@ img {
   text-align: left;
   margin-bottom: 16px;
 }*/
-
+.container-footer{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 120px;
+}
 .footer-studio {
   color: var(--light-color);
   font-family: "Raleway", sans-serif;
@@ -461,4 +578,50 @@ img {
   margin-bottom: 0;
   margin-top: 16px;
 }
+.actions-footer{
+  display: flex;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+  margin-top: 16px;
+   gap: 16px;
+}
+
+.a-act-footer{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  background-color:  #434455;
+  border-radius: 50%;
+
+  background-position: center;
+ 
+}
+.a-act-footer:hover,
+.a-act-footer:focus{
+
+  background-color: #404BBF;
+
+}
+.social-media{
+  color: #FFFFFF;
+
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0.02em;
+text-align: left;
+
+}
+.a-icon-footer{
+  width: 24px;
+  height: 24px;
+}
 /* FOOTER */
+
