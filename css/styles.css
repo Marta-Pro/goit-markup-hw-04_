@@ -1,11 +1,12 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  
 }
-
+h1, h2, h3, h4, ul, p{
+  margin: 0;
+  padding: 0;
+}
 .display-block {
   display: block;
 }
@@ -321,6 +322,7 @@ width: 168px;
   gap: 24px;
 }
 .customer-link{
+  color: #8E8F99;
   border: 1px solid #8E8F99;
 border-radius: 4px;
     display: flex;
@@ -333,9 +335,11 @@ padding-bottom: 16px;
 .customer-link:hover,
 .customer-link:focus{
 border-color: #404BBF;
+color: #404BBF;
 }
+
 svg{
-  color: #8E8F99
+  color: currentColor
 ;
 }
 
@@ -364,6 +368,7 @@ color: #404BBF;
   justify-content: center;
   gap: 24px;
 }
+
 /* Section3 Contacts / Main team of studio */
 .section-team {
   padding-bottom: 120px;
@@ -394,6 +399,7 @@ color: #404BBF;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+  flex-basis: calc((100%-24px*3)/4);
 }
 .actions{
   display: flex;
@@ -403,8 +409,8 @@ color: #404BBF;
 
   list-style: none;
   gap: 24px;
-  padding-top: 8px;
-  padding-bottom: 32px;
+  margin-top: 8px;
+  margin-bottom: 32px;
 }
 
 .a-act{
@@ -537,8 +543,12 @@ color: #404BBF;
 .filter {
   width: calc((100% - 48px) / 3);
 }
-.link-prt:hover{
-  display: block;
+.link-prt{
+   display: block;
+}
+.link-prt:hover,
+.link-prt:focus{
+ 
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
    0px 1px 1px 
    rgba(46, 47, 66, 0.16),
